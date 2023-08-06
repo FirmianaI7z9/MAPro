@@ -44,12 +44,12 @@
   <div class="level" style="display: none;">
     <p class="tt">MAPro.</p>
     <p class="ti">Select Problem Type & Difficulty</p>
-    <p class="td">Unscramble / 入れ替わった市区町村を直せ</p>
+    <p class="td">Unscramble / <nobr>入れ替わった市区町村を直せ</nobr></p>
     <div class="lc">
       <button type="button" class="lb bnor" onclick="d(0,0)"></button>
       <button type="button" class="lb" onclick="d(0,1)">WHOLE<br><span class="ss">全ての市区町村が出題されます</span></button>
     </div>
-    <p class="td">Direct / 市区町村名一問一答</p>
+    <p class="td">Direct / <nobr>市区町村名一問一答</nobr></p>
     <div class="lc">
       <button type="button" class="lb bnor" onclick="d(1,0)"></button>
       <button type="button" class="lb" onclick="d(1,1)">WHOLE<br><span class="ss">全ての市区町村が出題されます</span></button>
@@ -59,10 +59,10 @@
 
   <div class="main1" style="display: none;">
     <p class="td" id="qt1"></p>
-    <p class="td">Unscramble / 入れ替わった市区町村を直せ</p>
+    <p class="td">Unscramble / <nobr>入れ替わった市区町村を直せ</nobr></p>
     <p class="ti">Select two replaced municipalities out of four from rightside.<br>2つの入れ替わっている市区町村を右の4つから選べ。</p>
     <div class="lc">
-      <canvas width="600" height="480" id="canvas1"></canvas>
+      <canvas id="canvas1"></canvas>
       <div class="mc">
         <p style="font-size: 120%;" id="qn1"><u>1 out of 5 problems</u></p>
         <div class="mcc" id="0ans0" style="border-left: solid 20px red;" onclick="e(0)">
@@ -99,10 +99,10 @@
 
   <div class="main2" style="display: none;">
     <p class="td" id="qt2"></p>
-    <p class="td">Direct / 市区町村名一問一答</p>
+    <p class="td">Direct / <nobr>市区町村名一問一答</nobr></p>
     <p class="ti">Select the name of red-highlighted municipality.<br>赤色で示された市区町村の名前を選べ。</p>
     <div class="lc">
-      <canvas width="600" height="480" id="canvas2"></canvas>
+      <canvas id="canvas2"></canvas>
       <div class="mc">
         <p style="font-size: 120%;" id="qn2"><u>1 out of 5 problems</u></p>
         <div class="mcc" id="1ans0" style="border-left: solid 20px dimgray;" onclick="e(0)">

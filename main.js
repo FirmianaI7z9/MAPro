@@ -249,7 +249,8 @@ function e(num) {
       main1.style = "display: none;";
       main2.style = "display: none;";
       document.getElementById('ren').textContent = areo['name'].replace('/', ' / ');
-      document.getElementById('reg').textContent = (se == 0 ? 'Unscramble / 入れ替わった市区町村を直せ' : 'Direct / 市区町村名一問一答');
+      document.getElementById('reg').innerHTML = 
+        (se == 0 ? 'Unscramble / <nobr>入れ替わった市区町村を直せ</nobr>' : 'Direct / <nobr>市区町村名一問一答</nobr>');
       document.getElementById('rer').textContent = '[ correct : ' + (20 * tans) + '% ]';
       res.style = "";
     } else {
