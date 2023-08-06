@@ -286,7 +286,6 @@ function e(num) {
       np();
     }
   }
-  window.scroll({top: 0});
 }
 
 function f() {
