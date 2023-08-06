@@ -241,6 +241,7 @@ function e(num) {
         cc.fillStyle = 'red';
         cc.fill();
       }
+      document.getElementById('qn' + (se + 1)).textContent = 'Tap below to next / 選択肢部を押して次へ';
     } else if (se == 1 && cnt == 1) {
       isf = true;
       if (ans[qans[0]] == true) {
@@ -265,15 +266,18 @@ function e(num) {
         cc.fillStyle = 'red';
         cc.fill();
       }
+      document.getElementById('qn' + (se + 1)).textContent = 'Tap below to next / 選択肢部を押して次へ';
     }
   } else {
     qans.forEach(i => {
       document.getElementById(se + 'ans' + i).classList.remove('mccwr');
     });
+
     for (let i = 0; i < 4; i++) {
       if (ans[i] == true) document.getElementById(se + 'ans' + i).classList.remove('mccbr');
       ans[i] = false;
     }
+
     if (qnum == 5) {
       main1.style = "display: none;";
       main2.style = "display: none;";
