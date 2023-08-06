@@ -124,7 +124,7 @@ canvas {
     background: #ffffff;
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (max-width: 650px) {
     .tc {
         display: flex;
         justify-content: center;
@@ -139,15 +139,15 @@ canvas {
     }
 
     .lb {
-        height: 100px;
-        width: 400px;
+        height: 80px;
+        width: 320px;
         font-size: 150%;
         margin: 10px;
     }
 
     .lbc {
-        height: 100px;
-        width: 400px;
+        height: 80px;
+        width: 320px;
         font-size: 150%;
         margin: 10px;
         position: relative;
