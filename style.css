@@ -122,8 +122,6 @@ body {
 
 canvas {
     background: #ffffff;
-    height: 480px;
-    width: 600px;
 }
 
 @media only screen and (max-width: 650px) {
@@ -234,7 +232,5 @@ canvas {
 
     canvas {
         background: #ffffff;
-        height: 288px;
-        width: 360px;
     }
 }

@@ -22,12 +22,19 @@ function init() {
   res = document.getElementsByClassName('result')[0];
 
   canvas1 = document.getElementById("canvas1");
-  width = canvas1.width;
-  height = canvas1.height;
   c1 = canvas1.getContext("2d");
   canvas2 = document.getElementById("canvas2");
   c2 = canvas2.getContext("2d");
 
+  if (window.innerWidth > 940) {
+    width = 600;
+    height = 480;
+  } else if (window.innerWidth > 650) {
+    
+  } else {
+    width = 360;
+    height = 288;
+  }
   canvas1.width = width * 2;
   canvas1.height = height * 2;
   canvas2.width = width * 2;
