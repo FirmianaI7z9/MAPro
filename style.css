@@ -123,3 +123,7 @@ body {
 canvas {
     background: #ffffff;
 }
+
+@media only screen and (min-width: 650px) {
+    
+}
