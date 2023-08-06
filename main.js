@@ -26,8 +26,6 @@ function init() {
   height = canvas1.height;
   c1 = canvas1.getContext("2d");
   canvas2 = document.getElementById("canvas2");
-  width = canvas2.width;
-  height = canvas2.height;
   c2 = canvas2.getContext("2d");
 }
 window.onload = function () {
@@ -199,7 +197,7 @@ function e(num) {
       isf = true;
       if (ans[qans[0]] == true && ans[qans[1]] == true) {
         cc.beginPath();
-        cc.arc(300, 240, 100, 0, 2 * Math.PI, true);
+        cc.arc(width * 0.5, height * 0.5, width * 0.17, 0, 2 * Math.PI, true);
         cc.strokeStyle = 'blue';
         cc.lineWidth = 20;
         cc.closePath();
@@ -209,9 +207,13 @@ function e(num) {
         document.getElementById(se + 'ans' + qans[0]).classList.add('mccwr');
         document.getElementById(se + 'ans' + qans[1]).classList.add('mccwr');
         cc.beginPath();
-        cc.moveTo(390, 140);
-        cc.lineTo(400, 150); cc.lineTo(310, 240); cc.lineTo(400, 330); cc.lineTo(390, 340); cc.lineTo(300, 250); cc.lineTo(210, 340);
-        cc.lineTo(200, 330); cc.lineTo(290, 240); cc.lineTo(200, 150); cc.lineTo(210, 140); cc.lineTo(300, 230);
+        cc.moveTo(width * 390 / 600, height * 140 / 480);
+        cc.lineTo(width * 400 / 600, height * 150 / 480); cc.lineTo(width * 310 / 600, height * 240 / 480); 
+        cc.lineTo(width * 400 / 600, height * 330 / 480); cc.lineTo(width * 390 / 600, height * 340 / 480);
+        cc.lineTo(width * 300 / 600, height * 250 / 480); cc.lineTo(width * 210 / 600, height * 340 / 480);
+        cc.lineTo(width * 200 / 600, height * 330 / 480); cc.lineTo(width * 290 / 600, height * 240 / 480); 
+        cc.lineTo(width * 200 / 600, height * 150 / 480); cc.lineTo(width * 210 / 600, height * 140 / 480);
+        cc.lineTo(width * 300 / 600, height * 230 / 480);
         cc.closePath();
         cc.fillStyle = 'red';
         cc.fill();
@@ -220,7 +222,7 @@ function e(num) {
       isf = true;
       if (ans[qans[0]] == true) {
         cc.beginPath();
-        cc.arc(300, 240, 100, 0, 2 * Math.PI, true);
+        cc.arc(width * 0.5, height * 0.5, width * 0.17, 0, 2 * Math.PI, true);
         cc.strokeStyle = 'blue';
         cc.lineWidth = 20;
         cc.closePath();
@@ -229,9 +231,13 @@ function e(num) {
       } else {
         document.getElementById(se + 'ans' + qans[0]).classList.add('mccwr');
         cc.beginPath();
-        cc.moveTo(390, 140);
-        cc.lineTo(400, 150); cc.lineTo(310, 240); cc.lineTo(400, 330); cc.lineTo(390, 340); cc.lineTo(300, 250); cc.lineTo(210, 340);
-        cc.lineTo(200, 330); cc.lineTo(290, 240); cc.lineTo(200, 150); cc.lineTo(210, 140); cc.lineTo(300, 230);
+        cc.moveTo(width * 390 / 600, height * 140 / 480);
+        cc.lineTo(width * 400 / 600, height * 150 / 480); cc.lineTo(width * 310 / 600, height * 240 / 480); 
+        cc.lineTo(width * 400 / 600, height * 330 / 480); cc.lineTo(width * 390 / 600, height * 340 / 480);
+        cc.lineTo(width * 300 / 600, height * 250 / 480); cc.lineTo(width * 210 / 600, height * 340 / 480);
+        cc.lineTo(width * 200 / 600, height * 330 / 480); cc.lineTo(width * 290 / 600, height * 240 / 480); 
+        cc.lineTo(width * 200 / 600, height * 150 / 480); cc.lineTo(width * 210 / 600, height * 140 / 480);
+        cc.lineTo(width * 300 / 600, height * 230 / 480);
         cc.closePath();
         cc.fillStyle = 'red';
         cc.fill();
@@ -296,14 +302,14 @@ function np() {
       });
     });
   });
-  disv = Math.min(590.0 / (maxx - minx), 470.0 / (maxy - miny));
+  disv = Math.min((width - 10.0) / (maxx - minx), (height - 10.0) / (maxy - miny));
 
   carr = fisher_yates(carr);
   carr = carr.slice(0, 4);
   qans = fisher_yates([0,1,2,3]);
   if (se == 0) qans = qans.slice(0,2);
 
-  cc.clearRect(0, 0, 600, 480);
+  cc.clearRect(0, 0, width, height);
   cc.lineWidth = 1;
   region.forEach((reg) => {
     let geometry = reg['geometry'];
@@ -317,10 +323,12 @@ function np() {
         val.forEach(poly => {
           poly.forEach(poly => {
             if (isStart) {
-              cc.moveTo((poly[0] - (minx + maxx) * 0.5) * disv + 300, (poly[1] - (miny + maxy) * 0.5) * disv * -1 + 240);
+              cc.moveTo((poly[0] - (minx + maxx) * 0.5) * disv + width / 2,
+                (poly[1] - (miny + maxy) * 0.5) * disv * -1 + height / 2);
               isStart = false;
             } else {
-              cc.lineTo((poly[0] - (minx + maxx) * 0.5) * disv + 300, (poly[1] - (miny + maxy) * 0.5) * disv * -1 + 240);
+              cc.lineTo((poly[0] - (minx + maxx) * 0.5) * disv + width / 2,
+                (poly[1] - (miny + maxy) * 0.5) * disv * -1 + height / 2);
             }
           });
         });
@@ -336,10 +344,12 @@ function np() {
       val.forEach(poly => {
         poly.forEach(poly => {
           if (isStart) {
-            cc.moveTo((poly[0] - (minx + maxx) * 0.5) * disv + 300, (poly[1] - (miny + maxy) * 0.5) * disv * -1 + 240);
+            cc.moveTo((poly[0] - (minx + maxx) * 0.5) * disv + width / 2, 
+              (poly[1] - (miny + maxy) * 0.5) * disv * -1 + height / 2);
             isStart = false;
           } else {
-            cc.lineTo((poly[0] - (minx + maxx) * 0.5) * disv + 300, (poly[1] - (miny + maxy) * 0.5) * disv * -1 + 240);
+            cc.lineTo((poly[0] - (minx + maxx) * 0.5) * disv + width / 2, 
+              (poly[1] - (miny + maxy) * 0.5) * disv * -1 + height / 2);
           }
         });
       });
