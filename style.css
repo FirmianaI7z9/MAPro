@@ -122,9 +122,15 @@ body {
 
 canvas {
     background: #ffffff;
+    height: 480px;
+    width: 600px;
 }
 
 @media only screen and (max-width: 650px) {
+    body {
+        font-size: 16px;
+    }
+
     .tc {
         display: flex;
         justify-content: center;
@@ -184,7 +190,7 @@ canvas {
     }
 
     .mcc {
-        width: 360px;
+        width: 400px;
         height: 100px;
         margin: 5px;
         border: solid 1px #000000;
@@ -223,5 +229,11 @@ canvas {
 
     .ss {
         font-size: 80%;
+    }
+
+    canvas {
+        background: #ffffff;
+        height: 40px;
+        width: 500px;
     }
 }
