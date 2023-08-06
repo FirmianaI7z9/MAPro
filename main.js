@@ -282,6 +282,7 @@ function e(num) {
         (se == 0 ? 'Unscramble / <nobr>入れ替わった市区町村を直せ</nobr>' : 'Direct / <nobr>市区町村名一問一答</nobr>');
       document.getElementById('rer').textContent = '[ correct : ' + (20 * tans) + '% ]';
       res.style = "";
+      window.scroll({top: 0});
     } else {
       np();
     }
