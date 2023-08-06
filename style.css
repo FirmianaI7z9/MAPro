@@ -147,6 +147,7 @@ canvas {
         width: 320px;
         font-size: 150%;
         margin: 10px;
+        border: solid 1px black;
     }
 
     .lbc {
