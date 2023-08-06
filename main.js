@@ -27,6 +27,15 @@ function init() {
   c1 = canvas1.getContext("2d");
   canvas2 = document.getElementById("canvas2");
   c2 = canvas2.getContext("2d");
+
+  canvas1.width = width * 2;
+  canvas1.height = height * 2;
+  canvas2.width = width * 2;
+  canvas2.height = height * 2;
+  canvas1.style = "width: " + width + "px; height:" + height + "px;";
+  canvas2.style = "width: " + width + "px; height:" + height + "px;";
+  width *= 2;
+  height *= 2;
 }
 window.onload = function () {
   init();

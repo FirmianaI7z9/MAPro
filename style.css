@@ -185,13 +185,12 @@ canvas {
     }
 
     .mc {
-        width: 380px;
-        margin-left: 20px;
+        width: 360px;
     }
 
     .mcc {
-        width: 360px;
-        height: 100px;
+        width: 340px;
+        height: 90px;
         margin: 5px;
         border: solid 1px #000000;
     }
@@ -213,18 +212,18 @@ canvas {
     }
 
     .fa {
-        font-size: 120%;
-        line-height: 20px;
+        font-size: 110%;
+        line-height: 18px;
     }
 
     .fb {
-        font-size: 180%;
-        line-height: 30px;
+        font-size: 170%;
+        line-height: 27px;
     }
 
     .fc {
-        font-size: 100%;
-        line-height: 20px;
+        font-size: 90%;
+        line-height: 18px;
     }
 
     .ss {
