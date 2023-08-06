@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, Helvetica, YuGothic, 'Yu Gothic Medium', sans-serif; 
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.tt {
+    font-size: 300%;
+    text-align: center;
+}
+
+.ti {
+    font-size: 120%;
+    text-align: center;
+}
+
+.td {
+    font-size: 150%;
+    text-align: center;
+}
+
+.tc {
+    display: flex;
+    justify-content: center;
+}
+
+.lc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.lb {
+    height: 100px;
+    width: 400px;
+    font-size: 150%;
+    margin: 10px;
+}
+
+.lbc {
+    height: 100px;
+    width: 400px;
+    font-size: 150%;
+    margin: 10px;
+    position: relative;
+}
+
+.lbi {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: solid 1px;
+    opacity: 0.9;
+}
+
+.lbi:hover {
+    opacity: 0.5;
+}
+
+.lbc p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff33;
+    pointer-events: none;
+}
+
+.mc {
+    width: 380px;
+    margin-left: 20px;
+}
+
+.mcc {
+    width: 360px;
+    height: 100px;
+    margin: 5px;
+    border: solid 1px #000000;
+}
+
+.mccbr {
+    background: #ffffbb;
+    border: solid 1px #ffbb00;
+}
+
+.mccwr {
+    background: #ffbbbb;
+    border: solid 1px #ff0000;
+}
+
+.mcc p {
+    height: 80px;
+    margin: 0;
+    padding: 10px;
+}
+
+.fa {
+    font-size: 120%;
+    line-height: 20px;
+}
+
+.fb {
+    font-size: 180%;
+    line-height: 30px;
+}
+
+.fc {
+    font-size: 100%;
+    line-height: 20px;
+}
+
+.ss {
+    font-size: 80%;
+}
+
+canvas {
+    background: #ffffff;
+}

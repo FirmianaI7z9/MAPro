@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>MAPro.</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div class="title">
+    <p class="tt">MAPro.</p>
+    <p class="ti">Select MAPro. type</p>
+    <div class="tc">
+      <button type="button" class="lb" onclick="a('japan')">JAPAN</button>
+      <button type="button" class="lb" disabled="true">WORLD</button>
+    </div>
+  </div>
+
+  <div class="l_category" style="display: none;">
+    <p class="tt">MAPro.</p>
+    <p class="ti">Select Region</p>
+    <div class="lc" id="lcd">
+    </div>
+  </div>
+
+  <div class="s_category" style="display: none;">
+    <p class="tt">MAPro.</p>
+    <p class="ti">Select Area</p>
+    <div class="lc" id="scd">
+    </div>
+  </div>
+
+  <div class="level" style="display: none;">
+    <p class="tt">MAPro.</p>
+    <p class="ti">Select Problem Type & Difficulty</p>
+    <p class="td">Unscramble / 入れ替わった市区町村を直せ</p>
+    <div class="lc">
+      <button type="button" class="lb bnor" onclick="d(0,0)"></button>
+      <button type="button" class="lb" onclick="d(0,1)">WHOLE<br><span class="ss">全ての市区町村が出題されます</span></button>
+    </div>
+    <p class="td">Direct / 市区町村名一問一答</p>
+    <div class="lc">
+      <button type="button" class="lb bnor" onclick="d(1,0)"></button>
+      <button type="button" class="lb" onclick="d(1,1)">WHOLE<br><span class="ss">全ての市区町村が出題されます</span></button>
+      <button type="button" class="lb" onclick="cb()">Back<br>戻る</button>
+    </div>
+  </div>
+
+  <div class="main1" style="display: none;">
+    <p class="td" id="qt1"></p>
+    <p class="td">Unscramble / 入れ替わった市区町村を直せ</p>
+    <p class="ti">Select two replaced municipalities out of four from rightside.<br>2つの入れ替わっている市区町村を右の4つから選べ。</p>
+    <div class="lc">
+      <canvas width="600" height="480" id="canvas1"></canvas>
+      <div class="mc">
+        <p style="font-size: 120%;" id="qn1"><u>1 out of 5 problems</u></p>
+        <div class="mcc" id="0ans0" style="border-left: solid 20px red;" onclick="e(0)">
+          <p>
+            <span class="fc" id="011"></span><br>
+            <span class="fa" id="012"></span><br>
+            <span class="fb" id="013"></span>
+          </p>
+        </div>
+        <div class="mcc" id="0ans1" style="border-left: solid 20px blue;" onclick="e(1)">
+          <p>
+            <span class="fc" id="021"></span><br>
+            <span class="fa" id="022"></span><br>
+            <span class="fb" id="023"></span>
+          </p>
+        </div>
+        <div class="mcc" id="0ans2" style="border-left: solid 20px green;" onclick="e(2)">
+          <p>
+            <span class="fc" id="031"></span><br>
+            <span class="fa" id="032"></span><br>
+            <span class="fb" id="033"></span>
+          </p>
+        </div>
+        <div class="mcc" id="0ans3" style="border-left: solid 20px orange;" onclick="e(3)">
+          <p>
+            <span class="fc" id="041"></span><br>
+            <span class="fa" id="042"></span><br>
+            <span class="fb" id="043"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main2" style="display: none;">
+    <p class="td" id="qt2"></p>
+    <p class="td">Direct / 市区町村名一問一答</p>
+    <p class="ti">Select the name of red-highlighted municipality.<br>赤色で示された市区町村の名前を選べ。</p>
+    <div class="lc">
+      <canvas width="600" height="480" id="canvas2"></canvas>
+      <div class="mc">
+        <p style="font-size: 120%;" id="qn2"><u>1 out of 5 problems</u></p>
+        <div class="mcc" id="1ans0" style="border-left: solid 20px dimgray;" onclick="e(0)">
+          <p>
+            <span class="fc" id="111"></span><br>
+            <span class="fa" id="112"></span><br>
+            <span class="fb" id="113"></span>
+          </p>
+        </div>
+        <div class="mcc" id="1ans1" style="border-left: solid 20px dimgray;" onclick="e(1)">
+          <p>
+            <span class="fc" id="121"></span><br>
+            <span class="fa" id="122"></span><br>
+            <span class="fb" id="123"></span>
+          </p>
+        </div>
+        <div class="mcc" id="1ans2" style="border-left: solid 20px dimgray;" onclick="e(2)">
+          <p>
+            <span class="fc" id="131"></span><br>
+            <span class="fa" id="132"></span><br>
+            <span class="fb" id="133"></span>
+          </p>
+        </div>
+        <div class="mcc" id="1ans3" style="border-left: solid 20px dimgray;" onclick="e(3)">
+          <p>
+            <span class="fc" id="141"></span><br>
+            <span class="fa" id="142"></span><br>
+            <span class="fb" id="143"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="result" style="display: none;">
+    <p class="tt">MAPro.</p>
+    <p class="ti">Result</p>
+    <p class="td" id="ren"></p>
+    <p class="td" id="reg"></p>
+    <p class="tr" id="rer" style="font-size: 300%; text-align: center;">[ correct : 100% ]</p>
+    <div class="lc">
+      <button type="button" class="lb" onclick="f()">Retry this game<br>同じ設定でやり直す</button>
+      <button type="button" class="lb" onclick="g()">Back to area selection<br>エリア選択に戻る</button>
+    </div>
+  </div>
+</body>
+
+</html>

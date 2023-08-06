@@ -1,0 +1,398 @@
+{
+  "region": [
+    {
+      "name": "HOKKAIDO/北海道地方",
+      "id": "hokkaido"
+    },
+    {
+      "name": "TOHOKU/東北地方",
+      "id": "tohoku"
+    },
+    {
+      "name": "KANTO/関東地方",
+      "id": "kanto"
+    },
+    {
+      "name": "CHUBU/中部地方",
+      "id": "chubu"
+    },
+    {
+      "name": "KINNKI/近畿地方",
+      "id": "kinnki"
+    },
+    {
+      "name": "CHUGOKU/中国地方",
+      "id": "chugoku"
+    },
+    {
+      "name": "SHIKOKU/四国地方",
+      "id": "shikoku"
+    },
+    {
+      "name": "KYUSHU/九州地方",
+      "id": "kyushu"
+    }
+  ],
+  "area": [
+    {
+      "region": "hokkaido",
+      "areas": [
+        {
+          "name": "ISHIKARI/石狩振興局",
+          "id": "hokkaido_ishikari",
+          "isnormal": true
+        },
+        {
+          "name": "OSHIMA/渡島総合振興局",
+          "id": "hokkaido_oshima",
+          "isnormal": false
+        },
+        {
+          "name": "HIYAMA/檜山振興局",
+          "id": "hokkaido_hiyama",
+          "isnormal": false
+        },
+        {
+          "name": "SHIRIBESHI/後志総合振興局",
+          "id": "hokkaido_shiribeshi",
+          "isnormal": false
+        },
+        {
+          "name": "SORACHI/空知総合振興局",
+          "id": "hokkaido_sorachi",
+          "isnormal": true
+        },
+        {
+          "name": "KAMIKAWA/上川総合振興局",
+          "id": "hokkaido_kamikawa",
+          "isnormal": true
+        },
+        {
+          "name": "RUMOI/留萌振興局",
+          "id": "hokkaido_rumoi",
+          "isnormal": false
+        },
+        {
+          "name": "SOUYA/宗谷総合振興局",
+          "id": "hokkaido_soya",
+          "isnormal": false
+        },
+        {
+          "name": "OKHOTSK/オホーツク総合振興局",
+          "id": "hokkaido_okhotsk",
+          "isnormal": false
+        },
+        {
+          "name": "IBURI/胆振総合振興局",
+          "id": "hokkaido_iburi",
+          "isnormal": true
+        },
+        {
+          "name": "HIDAKA/日高振興局",
+          "id": "hokkaido_hidaka",
+          "isnormal": false
+        },
+        {
+          "name": "TOKACHI/十勝総合振興局",
+          "id": "hokkaido_tokachi",
+          "isnormal": false
+        },
+        {
+          "name": "KUSHIRO/釧路総合振興局",
+          "id": "hokkaido_kushiro",
+          "isnormal": false
+        },
+        {
+          "name": "NEMURO/根室振興局",
+          "id": "hokkaido_nemuro",
+          "isnormal": false
+        }
+      ]
+    },
+    {
+      "region": "tohoku",
+      "areas": [
+        {
+          "name": "AOMORI/青森県",
+          "id": "aomori",
+          "isnormal": true
+        },
+        {
+          "name": "IWATE/岩手県",
+          "id": "iwate",
+          "isnormal": true
+        },
+        {
+          "name": "MIYAGI/宮城県",
+          "id": "miyagi",
+          "isnormal": true
+        },
+        {
+          "name": "AKITA/秋田県",
+          "id": "akita",
+          "isnormal": true
+        },
+        {
+          "name": "YAMAGATA/山形県",
+          "id": "yamagata",
+          "isnormal": true
+        },
+        {
+          "name": "FUKUSHIMA/福島県",
+          "id": "fukushima",
+          "isnormal": true
+        }
+      ]
+    },
+    {
+      "region": "kanto",
+      "areas": [
+        {
+          "name": "GUMMA/群馬県",
+          "id": "gumma",
+          "isnormal": true
+        },
+        {
+          "name": "TOCHIGI/栃木県",
+          "id": "tochigi",
+          "isnormal": true
+        },
+        {
+          "name": "IBARAKI/茨城県",
+          "id": "ibaraki",
+          "isnormal": true
+        },
+        {
+          "name": "SAITAMA/埼玉県",
+          "id": "saitama",
+          "isnormal": true
+        },
+        {
+          "name": "CHIBA/千葉県",
+          "id": "chiba",
+          "isnormal": true
+        },
+        {
+          "name": "Wards of TOKYO/東京都区部",
+          "id": "tokyo_wards",
+          "isnormal": false
+        },
+        {
+          "name": "TAMA in TOKYO/東京都多摩",
+          "id": "tokyo_tama",
+          "isnormal": true
+        },
+        {
+          "name": "Islands of TOKYO/東京都島嶼部",
+          "id": "tokyo_islands",
+          "isnormal": false
+        },
+        {
+          "name": "KANAGAWA/神奈川県",
+          "id": "kanagawa",
+          "isnormal": true
+        }
+      ]
+    },
+    {
+      "region": "chubu",
+      "areas": [
+        {
+          "name": "NIIGATA/新潟県",
+          "id": "niigata",
+          "isnormal": true
+        },
+        {
+          "name": "TOYAMA/富山県",
+          "id": "toyama",
+          "isnormal": true
+        },
+        {
+          "name": "ISHIKAWA/石川県",
+          "id": "ishikawa",
+          "isnormal": true
+        },
+        {
+          "name": "FUKUI/福井県",
+          "id": "fukui",
+          "isnormal": true
+        },
+        {
+          "name": "YAMANASHI/山梨県",
+          "id": "yamanashi",
+          "isnormal": true
+        },
+        {
+          "name": "NAGANO/長野県",
+          "id": "nagano",
+          "isnormal": true
+        },
+        {
+          "name": "GIFU/岐阜県",
+          "id": "gifu",
+          "isnormal": true
+        },
+        {
+          "name": "SHIZUOKA/静岡県",
+          "id": "shizuoka",
+          "isnormal": true
+        },
+        {
+          "name": "AICHI/愛知県",
+          "id": "aichi",
+          "isnormal": true
+        }
+      ]
+    },
+    {
+      "region": "kinnki",
+      "areas": [
+        {
+          "name": "MIE/三重県",
+          "id": "mie",
+          "isnormal": true
+        },
+        {
+          "name": "SHIGA/滋賀県",
+          "id": "shiga",
+          "isnormal": true
+        },
+        {
+          "name": "KYOTO/京都府",
+          "id": "kyoto",
+          "isnormal": true
+        },
+        {
+          "name": "OSAKA/大阪府",
+          "id": "osaka",
+          "isnormal": true
+        },
+        {
+          "name": "HYOGO/兵庫県",
+          "id": "hyogo",
+          "isnormal": true
+        },
+        {
+          "name": "NARA/奈良県",
+          "id": "nara",
+          "isnormal": true
+        },
+        {
+          "name": "WAKAYAMA/和歌山県",
+          "id": "wakayama",
+          "isnormal": true
+        }
+      ]
+    },
+    {
+      "region": "chugoku",
+      "areas": [
+        {
+          "name": "TOTTORI/鳥取県",
+          "id": "tottori",
+          "isnormal": true
+        },
+        {
+          "name": "SHIMANE/島根県",
+          "id": "shimane",
+          "isnormal": true
+        },
+        {
+          "name": "OKAYAMA/岡山県",
+          "id": "okayama",
+          "isnormal": true
+        },
+        {
+          "name": "HIROSHIMA/広島県",
+          "id": "hiroshima",
+          "isnormal": true
+        },
+        {
+          "name": "YAMAGUCHI/山口県",
+          "id": "yamaguchi",
+          "isnormal": true
+        }
+      ]
+    },
+    {
+      "region": "shikoku",
+      "areas": [
+        {
+          "name": "TOKUSHIMA/徳島県",
+          "id": "tokushima",
+          "isnormal": true
+        },
+        {
+          "name": "KAGAWA/香川県",
+          "id": "kagawa",
+          "isnormal": true
+        },
+        {
+          "name": "EHIME/愛媛県",
+          "id": "ehime",
+          "isnormal": true
+        },
+        {
+          "name": "KOCHI/高知県",
+          "id": "kochi",
+          "isnormal": true
+        }
+      ]
+    },
+    {
+      "region": "kyushu",
+      "areas": [
+        {
+          "name": "FUKUOKA/福岡県",
+          "id": "fukuoka",
+          "isnormal": true
+        },
+        {
+          "name": "SAGA/佐賀県",
+          "id": "saga",
+          "isnormal": true
+        },
+        {
+          "name": "NAGASAKI/長崎県",
+          "id": "nagasaki",
+          "isnormal": true
+        },
+        {
+          "name": "KUMAMOTO/熊本県",
+          "id": "kumamoto",
+          "isnormal": true
+        },
+        {
+          "name": "OITA/大分県",
+          "id": "oita",
+          "isnormal": true
+        },
+        {
+          "name": "MIYAZAKI/宮崎県",
+          "id": "miyazaki",
+          "isnormal": true
+        },
+        {
+          "name": "Mainland of KAGOSHIMA/鹿児島県本土",
+          "id": "kagoshima_mainland",
+          "isnormal": true
+        },
+        {
+          "name": "Islands of KAGOSHIMA/鹿児島県島嶼部",
+          "id": "kagoshima_islands",
+          "isnormal": false
+        },
+        {
+          "name": "Main Island of OKINAWA/沖縄県本島",
+          "id": "okinawa_mainisland",
+          "isnormal": true
+        },
+        {
+          "name": "Islands of OKINAWA/沖縄県島嶼部",
+          "id": "okinawa_islands",
+          "isnormal": false
+        }
+      ]
+    }
+  ]
+}
