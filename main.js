@@ -81,12 +81,14 @@ function a(str) {
     );
 
     lcat.style = "";
+    window.scroll({top: 0});
   }
 }
 
 function ab() {
   lcat.style = "display: none;";
   title.style = "";
+  window.scroll({top: 0});
 }
 
 function b(str) {
@@ -128,12 +130,14 @@ function b(str) {
     );
 
     scat.style = "";
+    window.scroll({top: 0});
   }
 }
 
 function bb() {
   scat.style = "display: none;";
   lcat.style = "";
+  window.scroll({top: 0});
 }
 
 function c(str) {
@@ -156,11 +160,13 @@ function c(str) {
     bnor[1].removeAttribute("disabled");
   }
   lev.style = "";
+  window.scroll({top: 0});
 }
 
 function cb() {
   lev.style = "display: none;";
   scat.style = "";
+  window.scroll({top: 0});
 }
 
 function d(sec, lv) {
@@ -194,6 +200,7 @@ function d(sec, lv) {
 function db() {
   main1.style = "display: none;";
   lev.style = "";
+  window.scroll({top: 0});
 }
 
 function e(num) {
@@ -279,19 +286,23 @@ function e(num) {
       np();
     }
   }
+  window.scroll({top: 0});
 }
 
 function f() {
   res.style = "display: none;";
   d(se, lvl);
+  window.scroll({top: 0});
 }
 
 function g() {
   res.style = "display: none;";
   scat.style = "";
+  window.scroll({top: 0});
 }
 
 function np() {
+  window.scroll({top: 0});
   isf = false;
   qnum++;
   document.getElementById('qn' + (se + 1)).textContent = qnum + ' out of 5 problems';
