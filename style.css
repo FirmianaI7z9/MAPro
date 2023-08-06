@@ -38,6 +38,12 @@ body {
     width: 400px;
     font-size: 150%;
     margin: 10px;
+    border: solid 1px black;
+    background-color: #ffffff;
+}
+
+.lb:hover {
+    background-color: #DDDDDD;
 }
 
 .lbc {
@@ -147,7 +153,6 @@ canvas {
         width: 320px;
         font-size: 150%;
         margin: 10px;
-        border: solid 1px black;
     }
 
     .lbc {
